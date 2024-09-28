@@ -1,0 +1,270 @@
+ 
+/* Loading mario font */
+ @font-face {
+  font-family: 'New Super Mario Font U';
+  src: url('../fonts/NewSuperMarioFontU.ttf') format('truetype');
+}
+
+
+/* #################   STYLING THE BODY ################### */
+body {
+  /*background-image: url('../media/gw.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 4000px; /* Set the height to 100% of the viewport height 
+  width:  2800px;*/
+  font-family: 'New Super Mario Font U', sans-serif;
+  cursor:url(../media/questionmark.png), auto;
+}
+
+
+.background-container {
+  position: relative;
+  background-image: url('../media/tuplan.png');
+  background-size: cover;
+  /* Add other background properties as needed */
+  height: 1829px; /* Set the height to 100% of the viewport height */
+  width:  3308px;
+}
+
+.positioned-element {
+  position: absolute;
+  /* Position the element relative to the background-container */
+  width: 75px;
+  height: 75px;
+  opacity: 0.9; /* Set the desired opacity value */
+  font-size: 3em;
+
+  transform-origin: bottom right;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../media/exclamationmark.png"), auto;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+
+
+.pinbox {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  opacity: 0.9; /* Set the desired opacity value */
+  font-size: 3em;
+
+  transform-origin: bottom right;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../media/exclamationmark.png"), auto;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+
+.pinbox:hover {
+  transform: scale(1.5);
+}
+
+.pinbox img {
+  scale: 0.4;
+}
+
+
+#mario {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 0.2s;
+  background-image: url('../media/runningmario.gif');
+  background-size: cover;
+}
+
+
+
+
+/* ########### Animation if wrong password was given ##############*/
+
+#wrongpsw {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+
+/* ########### no line when clicking on the input field ########*/
+
+input:focus {
+  outline-color: none;
+  outline-width: 0px;
+  outline-style: solid;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.9);
+}
+
+
+/* ###########   styling  the input fields ##############*/
+
+.input-fields {
+  font-family: 'New Super Mario Font U', sans-serif;
+  background-color: #d0d7e1;
+  border-radius: 2px;
+  border-top: 5px solid white;
+  border-left: 6px solid white;
+  border-right: 0px solid black;
+  border-bottom: 0px solid black;
+  box-shadow: gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  transform: skew(0deg,-7.3deg) ;
+  scale: 0.8;
+  cursor: url("../media/exclamationmark.png"), auto;
+  transition: transform 0.1s ease;
+
+  }
+
+.input-fields:hover {
+  transform: skew(0deg,-7.3deg) scale(1.1);
+}
+
+
+/* ############# styling of the image overlay  ##################*/
+
+.image-overlay {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  width: 200px;
+  height: 180px;
+  padding: 20px;
+  text-align: center;
+  scale: 2;
+  margin-c;
+  background-image: url("../media/mariobox05.png");
+
+  background-size: cover;
+
+}
+
+
+.boxshadow {
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 30px;
+  position: absolute;
+  top: 130%;
+  width: 170px;
+  height: 100px;
+  transform: skew(-45deg) rotate(14deg) scale(1.1, 0.9) translateX(20px);
+  scale: 0.8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pinpointshadow {
+  scale: 0.2;
+  transform: translateX(-6px) translateY(-10px);
+  border-radius: 50%;
+}
+
+
+.blackbox {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+.hideme {
+    display: none;
+}
+
+
+.lakita{
+  position: fixed;
+  top: 20%; 
+  left: 4%;
+  transition: transform 0.3s ease;
+  width: 225px;
+  height: 178px;
+}
+
+.lakita img {
+  position: relative;
+   scale: 0.5;
+}
+
+.lakita-shadow {
+   position: absolute;
+   left: 55%;
+   top: 170%;
+   border-radius: 50%;
+   scale: 0.5
+}
+
+.lakita:hover {
+  transform: scale(1.5);
+}
+
+
+
+#speech {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  top:-30%;
+  left:140%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.9; /* Set the desired opacity value */
+  font-size: 1em;
+  border-radius: 20% 20% 20% 0;
+  background: darkgray;
+  border: 4px solid black;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("../media/exclamationmark.png"), auto;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  pointer-events: none;
+}
+
+#speech:hover {
+  opacity: 1;
+}
+
+
+
+/* ##########  styling the scrole bar ############## */
+
+body::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #fbfdfa;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+  height: 8px;
+  background-color: #f3cd0a;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #f3cd0a;
+}
+
+
+
+

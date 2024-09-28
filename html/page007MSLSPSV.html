@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Certificate</title>
+<link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../media/favicon.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" type="text/css" href="../css/page.css">
+<script src="../js/page.js"></script> <!-- External JavaScript file -->
+
+</head>
+<body>
+  <!-- Rest of your webpage content -->
+
+<h1>Math Scavenger Hunt Certificate</h1>
+
+
+
+
+<p><strong>Your Victory pose </strong></p>
+<div class="input-container" id="inputContainer">
+    <input style="font-family: inherit; padding: 10px; font-size: 16px;" type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)" >
+</div>
+
+<img id="imagePreview" src="" alt="Image Preview" style="display:none; max-width: 600px;" />
+
+<div class="input-container" id="input-container">
+  <p>You can enter your names and a picture of you after completing the scavenger hunt now! After you did both you can zoom in and make a screenshot or safe the page as pdf as official certificate :)</p>
+    <input type="text" id="name" autocomplete="name" placeholder="Your Name" style="font-family: inherit; padding: 10px; font-size: 16px;">
+    <button style="font-family: inherit; padding: 10px; font-size: 16px;" onclick="generateCertificate()">Generate Certificate</button>
+</div>
+
+<div class="certificate" id="certificate">
+    <p><strong>This certifies that the Math Scavenger Hunt was successfully completed
+     by no other then: <br> <br>
+      <span id="cert-name"></span> </p>
+    <p>Date: <span id="date"></span></p>
+</div>
+
+
+
+
+
+</body>
+</html>
