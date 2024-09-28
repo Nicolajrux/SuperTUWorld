@@ -184,7 +184,7 @@ input:focus {
 .lakita{
   position: fixed;
   top: 20%; 
-  left: 4%;
+  left: -5%;
   transition: transform 0.3s ease;
   width: 225px;
   height: 178px;
@@ -212,7 +212,7 @@ input:focus {
 #speech {
   position: absolute;
   width: 400px;
-  height: 100px;
+  height: 110px;
   top:-30%;
   left:140%;
   padding-top: 70px;
